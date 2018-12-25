@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E220622D21D25DA000F22D4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E220622C21D25DA000F22D4F /* AppDelegate.m */; };
+		E220623021D25DA000F22D4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E220622F21D25DA000F22D4F /* ViewController.m */; };
+		E220623321D25DA000F22D4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E220623121D25DA000F22D4F /* Main.storyboard */; };
+		E220623521D25DA100F22D4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E220623421D25DA100F22D4F /* Assets.xcassets */; };
+		E220623821D25DA100F22D4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E220623621D25DA100F22D4F /* LaunchScreen.storyboard */; };
+		E220623B21D25DA100F22D4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E220623A21D25DA100F22D4F /* main.m */; };
+		E220624521D25DA100F22D4F /* JKEncryptionDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E220624421D25DA100F22D4F /* JKEncryptionDemoTests.m */; };
+		E220625021D25DA100F22D4F /* JKEncryptionDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E220624F21D25DA100F22D4F /* JKEncryptionDemoUITests.m */; };
+		E220627121D25E2B00F22D4F /* NSString+JK_Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E220626821D25E2B00F22D4F /* NSString+JK_Base64.m */; };
+		E220627221D25E2B00F22D4F /* JKRSATool.m in Sources */ = {isa = PBXBuildFile; fileRef = E220626921D25E2B00F22D4F /* JKRSATool.m */; };
+		E220627321D25E2B00F22D4F /* NSString+JK_MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E220626A21D25E2B00F22D4F /* NSString+JK_MD5.m */; };
+		E220627421D25E2B00F22D4F /* NSData+JK_AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E220626B21D25E2B00F22D4F /* NSData+JK_AES.m */; };
+		E220627721D25EA100F22D4F /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = E220627521D25EA100F22D4F /* private_key.p12 */; };
+		E220627821D25EA100F22D4F /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = E220627621D25EA100F22D4F /* public_key.der */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E220624121D25DA100F22D4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E220622021D25DA000F22D4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E220622721D25DA000F22D4F;
+			remoteInfo = JKEncryptionDemo;
+		};
+		E220624C21D25DA100F22D4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E220622021D25DA000F22D4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E220622721D25DA000F22D4F;
+			remoteInfo = JKEncryptionDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E220622821D25DA000F22D4F /* JKEncryptionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKEncryptionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E220622B21D25DA000F22D4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E220622C21D25DA000F22D4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E220622E21D25DA000F22D4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E220622F21D25DA000F22D4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E220623221D25DA000F22D4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E220623421D25DA100F22D4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E220623721D25DA100F22D4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E220623921D25DA100F22D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E220623A21D25DA100F22D4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E220624021D25DA100F22D4F /* JKEncryptionDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKEncryptionDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E220624421D25DA100F22D4F /* JKEncryptionDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKEncryptionDemoTests.m; sourceTree = "<group>"; };
+		E220624621D25DA100F22D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E220624B21D25DA100F22D4F /* JKEncryptionDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKEncryptionDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E220624F21D25DA100F22D4F /* JKEncryptionDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKEncryptionDemoUITests.m; sourceTree = "<group>"; };
+		E220625121D25DA100F22D4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E220626821D25E2B00F22D4F /* NSString+JK_Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JK_Base64.m"; sourceTree = "<group>"; };
+		E220626921D25E2B00F22D4F /* JKRSATool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRSATool.m; sourceTree = "<group>"; };
+		E220626A21D25E2B00F22D4F /* NSString+JK_MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JK_MD5.m"; sourceTree = "<group>"; };
+		E220626B21D25E2B00F22D4F /* NSData+JK_AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JK_AES.m"; sourceTree = "<group>"; };
+		E220626C21D25E2B00F22D4F /* JKRSATool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRSATool.h; sourceTree = "<group>"; };
+		E220626D21D25E2B00F22D4F /* NSString+JK_Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JK_Base64.h"; sourceTree = "<group>"; };
+		E220626E21D25E2B00F22D4F /* NSData+JK_AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+JK_AES.h"; sourceTree = "<group>"; };
+		E220626F21D25E2B00F22D4F /* NSString+JK_MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JK_MD5.h"; sourceTree = "<group>"; };
+		E220627021D25E2B00F22D4F /* JKEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKEncryption.h; sourceTree = "<group>"; };
+		E220627521D25EA100F22D4F /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
+		E220627621D25EA100F22D4F /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E220622521D25DA000F22D4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E220623D21D25DA100F22D4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E220624821D25DA100F22D4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E220621F21D25DA000F22D4F = {
+			isa = PBXGroup;
+			children = (
+				E220622A21D25DA000F22D4F /* JKEncryptionDemo */,
+				E220624321D25DA100F22D4F /* JKEncryptionDemoTests */,
+				E220624E21D25DA100F22D4F /* JKEncryptionDemoUITests */,
+				E220622921D25DA000F22D4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E220622921D25DA000F22D4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E220622821D25DA000F22D4F /* JKEncryptionDemo.app */,
+				E220624021D25DA100F22D4F /* JKEncryptionDemoTests.xctest */,
+				E220624B21D25DA100F22D4F /* JKEncryptionDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E220622A21D25DA000F22D4F /* JKEncryptionDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E220622B21D25DA000F22D4F /* AppDelegate.h */,
+				E220622C21D25DA000F22D4F /* AppDelegate.m */,
+				E220622E21D25DA000F22D4F /* ViewController.h */,
+				E220622F21D25DA000F22D4F /* ViewController.m */,
+				E220623121D25DA000F22D4F /* Main.storyboard */,
+				E220627521D25EA100F22D4F /* private_key.p12 */,
+				E220627621D25EA100F22D4F /* public_key.der */,
+				E220626721D25E2B00F22D4F /* JKEncryption */,
+				E220623421D25DA100F22D4F /* Assets.xcassets */,
+				E220623621D25DA100F22D4F /* LaunchScreen.storyboard */,
+				E220623921D25DA100F22D4F /* Info.plist */,
+				E220623A21D25DA100F22D4F /* main.m */,
+			);
+			path = JKEncryptionDemo;
+			sourceTree = "<group>";
+		};
+		E220624321D25DA100F22D4F /* JKEncryptionDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E220624421D25DA100F22D4F /* JKEncryptionDemoTests.m */,
+				E220624621D25DA100F22D4F /* Info.plist */,
+			);
+			path = JKEncryptionDemoTests;
+			sourceTree = "<group>";
+		};
+		E220624E21D25DA100F22D4F /* JKEncryptionDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E220624F21D25DA100F22D4F /* JKEncryptionDemoUITests.m */,
+				E220625121D25DA100F22D4F /* Info.plist */,
+			);
+			path = JKEncryptionDemoUITests;
+			sourceTree = "<group>";
+		};
+		E220626721D25E2B00F22D4F /* JKEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				E220627021D25E2B00F22D4F /* JKEncryption.h */,
+				E220626D21D25E2B00F22D4F /* NSString+JK_Base64.h */,
+				E220626821D25E2B00F22D4F /* NSString+JK_Base64.m */,
+				E220626F21D25E2B00F22D4F /* NSString+JK_MD5.h */,
+				E220626A21D25E2B00F22D4F /* NSString+JK_MD5.m */,
+				E220626E21D25E2B00F22D4F /* NSData+JK_AES.h */,
+				E220626B21D25E2B00F22D4F /* NSData+JK_AES.m */,
+				E220626C21D25E2B00F22D4F /* JKRSATool.h */,
+				E220626921D25E2B00F22D4F /* JKRSATool.m */,
+			);
+			path = JKEncryption;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E220622721D25DA000F22D4F /* JKEncryptionDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E220625421D25DA100F22D4F /* Build configuration list for PBXNativeTarget "JKEncryptionDemo" */;
+			buildPhases = (
+				E220622421D25DA000F22D4F /* Sources */,
+				E220622521D25DA000F22D4F /* Frameworks */,
+				E220622621D25DA000F22D4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKEncryptionDemo;
+			productName = JKEncryptionDemo;
+			productReference = E220622821D25DA000F22D4F /* JKEncryptionDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E220623F21D25DA100F22D4F /* JKEncryptionDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E220625721D25DA100F22D4F /* Build configuration list for PBXNativeTarget "JKEncryptionDemoTests" */;
+			buildPhases = (
+				E220623C21D25DA100F22D4F /* Sources */,
+				E220623D21D25DA100F22D4F /* Frameworks */,
+				E220623E21D25DA100F22D4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E220624221D25DA100F22D4F /* PBXTargetDependency */,
+			);
+			name = JKEncryptionDemoTests;
+			productName = JKEncryptionDemoTests;
+			productReference = E220624021D25DA100F22D4F /* JKEncryptionDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E220624A21D25DA100F22D4F /* JKEncryptionDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E220625A21D25DA100F22D4F /* Build configuration list for PBXNativeTarget "JKEncryptionDemoUITests" */;
+			buildPhases = (
+				E220624721D25DA100F22D4F /* Sources */,
+				E220624821D25DA100F22D4F /* Frameworks */,
+				E220624921D25DA100F22D4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E220624D21D25DA100F22D4F /* PBXTargetDependency */,
+			);
+			name = JKEncryptionDemoUITests;
+			productName = JKEncryptionDemoUITests;
+			productReference = E220624B21D25DA100F22D4F /* JKEncryptionDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E220622021D25DA000F22D4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "JK科技有限公司";
+				TargetAttributes = {
+					E220622721D25DA000F22D4F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					E220623F21D25DA100F22D4F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E220622721D25DA000F22D4F;
+					};
+					E220624A21D25DA100F22D4F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = E220622721D25DA000F22D4F;
+					};
+				};
+			};
+			buildConfigurationList = E220622321D25DA000F22D4F /* Build configuration list for PBXProject "JKEncryptionDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E220621F21D25DA000F22D4F;
+			productRefGroup = E220622921D25DA000F22D4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E220622721D25DA000F22D4F /* JKEncryptionDemo */,
+				E220623F21D25DA100F22D4F /* JKEncryptionDemoTests */,
+				E220624A21D25DA100F22D4F /* JKEncryptionDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E220622621D25DA000F22D4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E220623821D25DA100F22D4F /* LaunchScreen.storyboard in Resources */,
+				E220623521D25DA100F22D4F /* Assets.xcassets in Resources */,
+				E220623321D25DA000F22D4F /* Main.storyboard in Resources */,
+				E220627721D25EA100F22D4F /* private_key.p12 in Resources */,
+				E220627821D25EA100F22D4F /* public_key.der in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E220623E21D25DA100F22D4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E220624921D25DA100F22D4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E220622421D25DA000F22D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E220627421D25E2B00F22D4F /* NSData+JK_AES.m in Sources */,
+				E220623021D25DA000F22D4F /* ViewController.m in Sources */,
+				E220623B21D25DA100F22D4F /* main.m in Sources */,
+				E220622D21D25DA000F22D4F /* AppDelegate.m in Sources */,
+				E220627221D25E2B00F22D4F /* JKRSATool.m in Sources */,
+				E220627121D25E2B00F22D4F /* NSString+JK_Base64.m in Sources */,
+				E220627321D25E2B00F22D4F /* NSString+JK_MD5.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E220623C21D25DA100F22D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E220624521D25DA100F22D4F /* JKEncryptionDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E220624721D25DA100F22D4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E220625021D25DA100F22D4F /* JKEncryptionDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E220624221D25DA100F22D4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E220622721D25DA000F22D4F /* JKEncryptionDemo */;
+			targetProxy = E220624121D25DA100F22D4F /* PBXContainerItemProxy */;
+		};
+		E220624D21D25DA100F22D4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E220622721D25DA000F22D4F /* JKEncryptionDemo */;
+			targetProxy = E220624C21D25DA100F22D4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E220623121D25DA000F22D4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E220623221D25DA000F22D4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E220623621D25DA100F22D4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E220623721D25DA100F22D4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E220625221D25DA100F22D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E220625321D25DA100F22D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E220625521D25DA100F22D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75LW4CAG6Y;
+				INFOPLIST_FILE = JKEncryptionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoou.joanking.JKEncryptionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E220625621D25DA100F22D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75LW4CAG6Y;
+				INFOPLIST_FILE = JKEncryptionDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoou.joanking.JKEncryptionDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E220625821D25DA100F22D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75LW4CAG6Y;
+				INFOPLIST_FILE = JKEncryptionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoou.joanking.JKEncryptionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKEncryptionDemo.app/JKEncryptionDemo";
+			};
+			name = Debug;
+		};
+		E220625921D25DA100F22D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75LW4CAG6Y;
+				INFOPLIST_FILE = JKEncryptionDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoou.joanking.JKEncryptionDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JKEncryptionDemo.app/JKEncryptionDemo";
+			};
+			name = Release;
+		};
+		E220625B21D25DA100F22D4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75LW4CAG6Y;
+				INFOPLIST_FILE = JKEncryptionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoou.joanking.JKEncryptionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JKEncryptionDemo;
+			};
+			name = Debug;
+		};
+		E220625C21D25DA100F22D4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 75LW4CAG6Y;
+				INFOPLIST_FILE = JKEncryptionDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoou.joanking.JKEncryptionDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JKEncryptionDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E220622321D25DA000F22D4F /* Build configuration list for PBXProject "JKEncryptionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E220625221D25DA100F22D4F /* Debug */,
+				E220625321D25DA100F22D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E220625421D25DA100F22D4F /* Build configuration list for PBXNativeTarget "JKEncryptionDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E220625521D25DA100F22D4F /* Debug */,
+				E220625621D25DA100F22D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E220625721D25DA100F22D4F /* Build configuration list for PBXNativeTarget "JKEncryptionDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E220625821D25DA100F22D4F /* Debug */,
+				E220625921D25DA100F22D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E220625A21D25DA100F22D4F /* Build configuration list for PBXNativeTarget "JKEncryptionDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E220625B21D25DA100F22D4F /* Debug */,
+				E220625C21D25DA100F22D4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E220622021D25DA000F22D4F /* Project object */;
+}
